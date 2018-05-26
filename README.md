@@ -1,9 +1,6 @@
 # GPS Test - ionic 3 google maps
 ionic 3 GPS Navigation implementation uisng google maps
-![alt text][logo]
-[logo]: https://github.com/kantanand/gps-test/raw/master/src/assets/imgs/logo.png "ionic 3"
-![alt text][gmaps]
-[gmaps]: https://github.com/kantanand/gps-test/raw/master/src/assets/imgs/gmapsicon.jpeg "google maps"
+![alt text](https://github.com/kantanand/gps-test/raw/master/src/assets/imgs/gmapsicon.png "ionic 3")
 
 **Before we Get Started**
 
