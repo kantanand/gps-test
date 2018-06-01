@@ -1,3 +1,4 @@
+import { AboutPage } from './../about/about';
 import { AuthServiceProvider } from './../../providers/auth-service/auth-service';
 import { Component } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
@@ -38,6 +39,10 @@ export class HomePage {
     // Remove API token
     localStorage.clear();
     setTimeout(() => this.backToWelcome(), 1000);
+  }
+
+  go_to_about() {
+    this.navCtrl.push(AboutPage);
   }
 
 }

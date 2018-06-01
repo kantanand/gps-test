@@ -1,11 +1,59 @@
 <ion-header>
   <ion-navbar>
     <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="ios-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to {{ userDetails.name }}</h2>
-  <h3>Email: {{ userDetails.email }}</h3>
-  <button ion-button color="primary" (click)="logout()">Logout</button>
+
+  <ion-card>
+    <ion-card-header>
+      Welcome to {{ userDetails.name }} <br>
+      <span>{{ userDetails.email }}</span>
+    </ion-card-header>
+    <ion-card-content>
+      Your Missions as follows
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/advance-card-map-madison.png">
+    <ion-item>
+      <ion-icon name="football" item-start large></ion-icon>
+      <h2>Museum of Football</h2>
+      <p>11 N. Way St, Madison, WI 53703</p>
+    </ion-item>
+
+    <ion-item>
+      <span item-left>18 min</span>
+      <span item-left>(2.6 mi)</span>
+      <button ion-button icon-left clear item-end (click)="go_to_about()">
+        <ion-icon name="navigate"></ion-icon>
+        Start
+      </button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="football" item-start large></ion-icon>
+      <h2>Museum of Football</h2>
+      <p>11 N. Way St, Madison, WI 53703</p>
+    </ion-item>
+
+    <ion-item>
+      <span item-left>18 min</span>
+      <span item-left>(2.6 mi)</span>
+      <button ion-button icon-left clear item-end (click)="go_to_about()">
+        <ion-icon name="navigate"></ion-icon>
+        Start
+      </button>
+    </ion-item>
+  </ion-card>
+
 </ion-content>
